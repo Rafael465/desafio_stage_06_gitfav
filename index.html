@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitFav</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" type="module"></script>
+
+</head>
+<body>
+    <main id="app">
+        <header>
+            <img src="assests/Gitfav.svg" alt="titulo da pagina com simbolo a frente com um par de chaves e uma estrela ao centro">
+            <div class="search">
+                <label class="sr-only" for="input-search">Digite o Github username que quer favoritar</label>
+                <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button>&star; Favoritar</button>
+            </div>
+        </header>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Repositorios</th>
+                        <th>Seguidores</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="no-favorite hide">
+                <div class="no-favs">
+                    <img src="./assests/Estrela.svg" alt="">
+                    <h2>Nenhum favorito ainda</h2>
+                </div>
+            </div>
+        </div>
+    </main>    
+</body>
+</html>
